@@ -171,7 +171,7 @@ def largest_indices(ary, n):
 
 def get_jc_scores(adj_train,u2id,v2id):
     adj_train_np = adj_train.toarray()
-    graph =nx.from_numpy_matrix(adj_train.toarray())
+    graph =nx.from_numpy_array(adj_train.toarray())
     adj_train = nx.to_dict_of_lists(graph)
 
     # Predict on test set of edges
@@ -212,7 +212,7 @@ def get_jc_scores(adj_train,u2id,v2id):
 
 def get_cn_scores(adj_train,u2id,v2id):
     adj_train_np = adj_train.toarray()
-    graph =nx.from_numpy_matrix(adj_train.toarray())
+    graph =nx.from_numpy_array(adj_train.toarray())
     adj_train = nx.to_dict_of_lists(graph)
 
     # Predict on test set of edges
@@ -253,7 +253,7 @@ def get_cn_scores(adj_train,u2id,v2id):
     
 def get_aa_scores(adj_train,u2id,v2id):
     adj_train_np = adj_train.toarray()
-    graph =nx.from_numpy_matrix(adj_train.toarray())
+    graph =nx.from_numpy_array(adj_train.toarray())
     adj_train = nx.to_dict_of_lists(graph)
 
     # Predict on test set of edges
@@ -299,7 +299,7 @@ def get_aa_scores(adj_train,u2id,v2id):
 
 def get_cpa_scores(adj_train,u2id,v2id):
     adj_train_np = adj_train.toarray()
-    graph =nx.from_numpy_matrix(adj_train.toarray())
+    graph =nx.from_numpy_array(adj_train.toarray())
     adj_train = nx.to_dict_of_lists(graph)
 
     # Predict on test set of edges
