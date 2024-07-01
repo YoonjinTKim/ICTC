@@ -46,7 +46,7 @@ def learn_train_adj(seed, model_name):
         model_adj_norm.cuda()
         weight_tensor = weight_tensor.cuda()
 
-    for epoch in range(args.num_epoch1):
+    for epoch in range(args.num_epoch):
     # for epoch in range(args.num_epoch):
 
         t = time.time()
